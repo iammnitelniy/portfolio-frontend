@@ -1,0 +1,36 @@
+.project {
+
+    width: 300px;
+    background-color: aliceblue;
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+.imgContainer {
+    display: flex;
+    align-items: center;
+    min-height: 300px;
+    color: #3e8e41;
+}
+
+.imgContainer img {
+    width: 100%;
+}
+.imgContainer a {
+    text-decoration: none;
+    color: deeppink;
+}
+
+.descriptionContainer {
+    min-height: 200px;
+    width: 100%;
+    background-color: darkgrey;
+}
+
+.description {
+
+}

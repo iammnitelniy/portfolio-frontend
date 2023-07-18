@@ -1,0 +1,74 @@
+.contactsBlock {
+    min-height: 100vh;
+    background-color: darkgrey;
+}
+
+.contactsContainer {
+    flex-direction: column;
+    justify-content: flex-start;
+
+}
+
+
+.title {
+    background-color: azure;
+
+}
+.contactsForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+    width: 40vh;
+}
+
+.contactsForm form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+}
+
+.contactsForm input {
+    width: 100%;
+    height: 30px;
+    margin-bottom: 5px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.contactsForm textarea {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 5px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.button {
+    background-color: navajowhite; /* Цвет фона */
+    border: none; /* Убираем границу */
+    color: white; /* Цвет текста */
+    padding: 10px 20px; /* Отступы внутри кнопки */
+    text-align: center; /* Выравнивание текста по центру */
+    text-decoration: none; /* Убираем подчеркивание у ссылок */
+    display: inline-block; /* Делаем элемент блочным */
+    font-size: 16px; /* Размер шрифта */
+    margin: 10px; /* Отступы между кнопками */
+    border-radius: 5px; /* Скругляем углы */
+    cursor: pointer; /* Делаем курсор при наведении */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Добавляем анимацию */
+}
+
+.button:hover {
+    background-color: #3e8e41; /* Изменяем цвет фона при наведении */
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3); /* Добавляем тень */
+}

@@ -1,0 +1,14 @@
+.nav {
+    border: 1px solid red;
+    width: 300px;
+    display: flex;
+    /*выравнивает по главной оси  align items по второстепенной*/
+    justify-content: space-between;
+    padding: 0.5em;
+
+
+}
+
+.nav a {
+
+}
