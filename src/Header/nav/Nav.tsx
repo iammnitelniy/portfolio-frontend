@@ -8,6 +8,7 @@ export const Nav = () => {
             <a href="#">Home</a>
             <a href="#">Skills</a>
             <a href="#">Projects</a>
+            <a href="#">Relocation</a>
             <a href="#">Contacts</a>
 
 
