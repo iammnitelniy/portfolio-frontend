@@ -4,8 +4,11 @@
 }
 
 .contactsContainer {
+    max-width: 100%;
     flex-direction: column;
     justify-content: flex-start;
+    align-items: center;
+    justify-content: center;
 
 }
 
@@ -20,6 +23,7 @@
     align-items: center;
     justify-content: center;
     height: 70vh;
+    max-width: 100%;
     width: 40vh;
 }
 

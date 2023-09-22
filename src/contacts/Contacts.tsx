@@ -21,7 +21,7 @@ export const Contacts = () => {
                         </form>
 
                     <div>
-                        <button className={s.button}>Contacts</button>
+                        <button type={'submit'} className={s.button}>Contacts</button>
                     </div>
                 </div>
 

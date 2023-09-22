@@ -1,7 +1,16 @@
 .header {
     height: 80px;
-    background-color: deepskyblue;
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    background-image: initial;
+    background-color: rgb(40, 43, 44);
+    color: rgb(168, 162, 152);
+    transition: all 0.5s ease;
+    position: -webkit-sticky;
+    position: sticky;
+    z-index: 1020;
+    top: 0;
+
+
 }

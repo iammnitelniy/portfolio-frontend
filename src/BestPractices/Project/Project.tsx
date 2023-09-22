@@ -5,7 +5,7 @@ export type SkillProps = {
     description: string
 }
 
-const Skill: React.FC<SkillProps> = ({title, description}) => {
+export const Project: React.FC<SkillProps> = ({title, description}) => {
     return (
         <div className={s.project}>
 
@@ -32,4 +32,3 @@ const Skill: React.FC<SkillProps> = ({title, description}) => {
     );
 };
 
-export default Skill;

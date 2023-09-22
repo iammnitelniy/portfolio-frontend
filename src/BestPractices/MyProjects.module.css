@@ -1,6 +1,6 @@
 .myProjectsBlock {
-    background-color: cadetblue;
     min-height: 100vh;
+
 
 
 }
@@ -28,6 +28,7 @@
     background-color: azure;
 
 }
+
 
 @media (max-width: 768px) {
 

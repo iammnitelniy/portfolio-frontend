@@ -1,6 +1,6 @@
 import s from './MyProjects.module.css'
 import styleContainer from '../common/styles/Container.module.css'
-import Project from "./Project/Project";
+import {Project} from "./Project/Project";
 
 
 export const MyProjects = () => {
@@ -10,7 +10,11 @@ export const MyProjects = () => {
     return (
         <div className={s.myProjectsBlock}>
             <div className={`${styleContainer.container} ${s.projectsContainer}`}>
-                <h2 className={s.title}>My Projects</h2>
+
+                <div className={s.title}>
+                    <h2>My Projects</h2>
+                </div>
+
 
                 <div className={s.projects}>
                     {projectsArray.map(()=> {
