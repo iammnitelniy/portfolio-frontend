@@ -1,4 +1,4 @@
-import s from './Project.module.css'
+import s from './Project.module.scss'
 
 export type SkillProps = {
     image: string
@@ -23,7 +23,7 @@ export const Project: React.FC<SkillProps> = ({title, description, image}) => {
 
             <div className={s.descriptionContainer}>
 
-                <h3>{title}</h3>
+                <h3 className={s.title}>{title}</h3>
                 <span className={s.description}>
                 {description}
             </span>
