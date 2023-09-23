@@ -1,4 +1,4 @@
-import s from './MyProjects.module.css'
+import s from './MyProjects.module.scss'
 import styleContainer from '../common/styles/Container.module.css'
 import taskManagerImg from '../common/images/task_manager.jpg'
 import socialNetworkImg from '../common/images/social_network.jpg'
@@ -21,7 +21,7 @@ export const MyProjects = () => {
         <div className={s.myProjectsBlock}>
             <div className={`${styleContainer.container} ${s.projectsContainer}`}>
 
-                <div className={s.title}>
+                <div className={styleContainer.title}>
                     <h2>My Projects</h2>
                 </div>
 

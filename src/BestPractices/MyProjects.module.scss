@@ -1,0 +1,28 @@
+
+.myProjectsBlock {
+  background-color: rgb(40, 43, 44);
+  color: rgb(168, 162, 152);
+  padding: 40px 0;
+
+  .projectsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .projects {
+      border: 1px solid;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px; /* Задайте промежуток между проектами по вашему усмотрению */
+        @media (max-width: 768px) {
+
+            justify-content: center;
+
+        }
+    }
+  }
+}
+
+
