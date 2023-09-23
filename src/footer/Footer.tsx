@@ -13,7 +13,7 @@ export const Footer = () => {
     return (
         <div className={s.footerBlock}>
             <div className={`${styleContainer.container} ${s.footerContainer}`}>
-                <h2 className={s.title}>Ilia Barabanov</h2>
+                <h2 className={styleContainer.title}>Ilia Barabanov</h2>
                 <div className={s.linksBlock}>
                     {mapForLogo.map((logo, index) => (
                         <div key={index} className={s.logo}>

@@ -1,11 +1,12 @@
 import s from './Project.module.css'
 
 export type SkillProps = {
+    image: string
     title: string
     description: string
 }
 
-export const Project: React.FC<SkillProps> = ({title, description}) => {
+export const Project: React.FC<SkillProps> = ({title, description, image}) => {
     return (
         <div className={s.project}>
 
@@ -13,8 +14,8 @@ export const Project: React.FC<SkillProps> = ({title, description}) => {
 
             <div className={s.imgContainer}>
 
-                <a href="#">Show </a>
-                <img/>
+                <a href="#"></a>
+                <img src={image}/>
 
 
             </div>

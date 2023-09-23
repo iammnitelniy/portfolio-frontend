@@ -10,7 +10,7 @@ export const Relocation = () => {
         <div className={s.relocationBlock}>
             <div className={`${styleContainer.container} ${s.relocationContainer}`}>
 
-                <h2 className={s.title}>Considering relocation</h2>
+                <h2 className={styleContainer.title}>Considering relocation</h2>
 
 
 
