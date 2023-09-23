@@ -1,37 +1,33 @@
+
 .myProjectsBlock {
-    min-height: 100vh;
-
-
-
+    background-color: rgb(40, 43, 44); /* Задайте фон по вашему усмотрению */
+    color: rgb(168, 162, 152); /* Задайте цвет текста по вашему усмотрению */
+    padding: 40px 0; /* Задайте отступы сверху и снизу по вашему усмотрению */
 }
-
-
 
 .projectsContainer {
+    display: flex;
     flex-direction: column;
-    justify-content: space-between;
-
-
-
-
+    align-items: center;
 }
 
-.projects{
+.title {
+    background-color: azure; /* Задайте цвет фона заголовка по вашему усмотрению */
+    padding: 10px 20px; /* Задайте отступы вокруг заголовка по вашему усмотрению */
+    border-radius: 5px; /* Задайте скругление углов по вашему усмотрению */
+    margin-bottom: 20px; /* Задайте отступ снизу заголовка по вашему усмотрению */
+}
+
+.projects {
     border: 1px solid;
     width: 100%;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    gap: 20px; /* Задайте промежуток между проектами по вашему усмотрению */
 }
-
-.title {
-    background-color: azure;
-
-}
-
 
 @media (max-width: 768px) {
-
     .projects {
         justify-content: center;
     }

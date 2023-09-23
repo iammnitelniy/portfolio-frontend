@@ -1,36 +1,65 @@
 .project {
-
-    width: 300px;
+    width: 100%;
+    max-width: 300px;
     background-color: aliceblue;
     border: 1px solid;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    margin: 10px; /* Добавим немного отступов между проектами */
+    border-radius: 10px; /* Добавим скругленные углы */
+    overflow: hidden; /* Скроем возможное переполнение содержимого */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Добавим небольшую тень */
 }
 
-
 .imgContainer {
-    display: flex;
-    align-items: center;
-    min-height: 300px;
-    color: #3e8e41;
+    min-height: 200px;
+    width: 100%;
+    position: relative; /* Добавим позицию для псевдоэлемента */
 }
 
 .imgContainer img {
     width: 100%;
+    height: auto;
+    display: block;
 }
+
+.imgContainer::before {
+    content: ''; /* Создадим псевдоэлемент для эффекта при наведении */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Черный полупрозрачный фон */
+    opacity: 0; /* Изначально невидимый */
+    transition: opacity 0.3s ease; /* Плавное изменение видимости */
+}
+
 .imgContainer a {
     text-decoration: none;
     color: deeppink;
+}
+
+.imgContainer:hover::before {
+    opacity: 1; /* При наведении делаем видимым */
 }
 
 .descriptionContainer {
     min-height: 200px;
     width: 100%;
     background-color: darkgrey;
+    padding: 10px; /* Добавим внутренние отступы для текста */
 }
 
 .description {
+    color: #333; /* Цвет текста */
+    font-size: 14px; /* Размер шрифта */
+}
 
+@media (max-width: 768px) {
+    .project {
+        max-width: 100%; /* На маленьких экранах ширина будет 100% */
+    }
 }
