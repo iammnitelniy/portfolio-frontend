@@ -1,8 +1,8 @@
 
 .header {
-    height: 80px;
+    height: 150px;
     display: flex;
-    justify-content: space-between; /* Изменим на space-between, чтобы разместить img и nav на разных сторонах */
+    justify-content: space-around; /* Изменим на space-between, чтобы разместить img и nav на разных сторонах */
     align-items: center;
     background-image: initial;
     background-color: rgb(40, 43, 44);

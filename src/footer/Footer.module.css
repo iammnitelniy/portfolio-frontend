@@ -1,25 +1,57 @@
 .footerBlock {
-    min-height: 40vh;
-    background-color: cornsilk;
+    min-height: 100px;
+    background-color: #212529;
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-
+    justify-content: center;
+    align-items: center;
+    color: #c5c1ba;
 }
 
 .footerContainer {
-    height: 30vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-
-
-
+    align-items: center;
+    text-align: center;
 }
 
 .title {
-    background-color: lightpink;
+    background-image: linear-gradient(90deg, #16d166 0%, #20c997 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 28px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    display: inline-block;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    padding: 15px 30px;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+}
 
+.title::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.1);
+    top: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    transition: transform 0.3s ease;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.title:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.title:hover::before {
+    transform: scaleX(1);
 }
 
 .linksBlock {
@@ -29,23 +61,32 @@
     justify-content: center;
 }
 
-
 .logo {
     border: 1px solid;
-    background-color: darkgrey;
+    background-color: #20c997;
     height: 40px;
     width: 40px;
     margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: transform 0.3s ease, transform 2s linear; /* Добавляем анимацию вращения */
+    cursor: pointer;
+}
 
+.logo:hover {
+    transform: scale(1.1) rotate(360deg); /* Увеличение размера и вращение при наведении */
 }
 
 .logo img {
     height: 100%;
     width: 100%;
+    object-fit: cover;
 }
-
 
 .label {
     font-weight: bold;
-    background-color: darkgrey;
+    color: #fff;
 }

@@ -1,16 +1,33 @@
 .skill {
-
-    width: 250px;
     background-color: aliceblue;
     border: 1px solid;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    border-radius: 8px;
+    padding: 20px;
+    width: calc(33.33% - 10px); /* Равное распределение на 3 колонки с отступами */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.skill:hover {
+    transform: translateY(-5px); /* Поднимаем элемент при наведении */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    background-color: #28e98c; /* Изменение цвета при наведении */
 }
 
 .icon {
     height: 40px;
     width: 40px;
     background-color: darkgrey;
+    transition: transform 0.3s ease;
+}
+
+.skill:hover .icon {
+    transform: scale(1.2); /* Увеличение иконки при наведении */
 }

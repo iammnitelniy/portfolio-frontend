@@ -1,11 +1,10 @@
 .relocationBlock {
     min-height: 30vh;
-    background-color: olive;
+    background-color: #212529; /* Изменил цвет фона */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
 }
 
 .relocationContainer {
@@ -13,40 +12,74 @@
     justify-content: flex-start;
     align-items: center;
     justify-content: center;
-
-
-
 }
 
-/*.skills {*/
-/*    border: 1px solid;*/
-/*    width: 100%;*/
-/*    display: flex;*/
-/*    justify-content: space-between;*/
-/*    flex-wrap: wrap;*/
-/*}*/
-
 .title {
-    background-color: lightpink;
+    background-image: linear-gradient(90deg, #16d166 0%, #20c997 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 28px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    display: inline-block;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    padding: 15px 30px;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+}
 
+.title::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.1);
+    top: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    transition: transform 0.3s ease;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.title:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.title:hover::before {
+    transform: scaleX(1);
+}
+
+.relocationContainer .title {
+    background-color: #20c997; /* Изменил цвет фона для title в relocationContainer */
 }
 
 .button {
-    background-color: navajowhite; /* Цвет фона */
-    border: none; /* Убираем границу */
-    color: white; /* Цвет текста */
-    padding: 1px 1px; /* Отступы внутри кнопки */
-    text-align: center; /* Выравнивание текста по центру */
-    text-decoration: none; /* Убираем подчеркивание у ссылок */
-    display: inline-block; /* Делаем элемент блочным */
-    font-size: 16px; /* Размер шрифта */
-    margin: 1px; /* Отступы между кнопками */
-    border-radius: 5px; /* Скругляем углы */
-    cursor: pointer; /* Делаем курсор при наведении */
-    transition: background-color 0.3s, box-shadow 0.3s; /* Добавляем анимацию */
+    background-color: transparent;
+    border: 2px solid #20c997;
+    color: #20c997;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    margin: 20px 0;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s ease, border-color 0.3s; /* Улучшил анимацию */
 }
 
 .button:hover {
-    background-color: #3e8e41; /* Изменяем цвет фона при наведении */
-    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3); /* Добавляем тень */
+    background-color: #20c997;
+    transform: scale(1.05); /* Небольшое увеличение кнопки */
+    border-color: transparent; /* Убрал границу при наведении */
 }
+
+
+
+
+

@@ -1,16 +1,32 @@
 .mainBlock {
     height: 100vh;
-    background-color: bisque;
+    color: #bfbab3;
+    background-color: #161818;
+    padding: 4.5rem 0;
+    position: relative;
 
 }
 
+.container {
+    max-width: 1200px; /* Настройте ширину контейнера по вашим потребностям */
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
 .text {
-        width: 300px;
-        background-color: white;
+    width: 300px;
+    background-color: white;
+    font-size: 24px;
+    font-weight: 600;
+    color: #d4d1cc;
 }
 
 .photo {
     width: 300px;
     height: 400px;
-    background-color: azure;
+    background-color: #20c997;
 }

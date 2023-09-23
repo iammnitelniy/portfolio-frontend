@@ -4,7 +4,7 @@ import {Project} from "./Project/Project";
 
 
 export const MyProjects = () => {
-    const projectsArray: number[] = [1, 2]
+    const projectsArray: number[] = [1, 2, 3, 4]
 
 
     return (
