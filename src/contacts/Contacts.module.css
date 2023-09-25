@@ -11,73 +11,51 @@
     justify-content: center;
 }
 
-
-
 .contactsForm {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 70vh; /* Вернул высоту обратно на 70vh */
+    height: 70vh;
     max-width: 100%;
     width: 40vh;
-    background-color: #343a40; /* Цвет фона формы */
-    padding: 20px; /* Увеличен внутренний отступ формы */
+    background-color: #343a40;
+    padding: 20px;
     border-radius: 8px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .contactsForm input {
+    background-color: #bfbab3;
+    color: #fff;
     width: 100%;
     height: 30px;
     margin-bottom: 10px;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #bfbab3;
     border-radius: 5px;
     box-sizing: border-box;
-    transition: border-color 0.3s ease, background-color 0.3s ease; /* Добавляем анимацию для цвета фона */
+    transition: border-color 0.3s ease, background-color 0.3s ease;
 }
 
 .contactsForm textarea {
+    background-color: #bfbab3;
+    color: #fff;
     width: 100%;
     height: 100px;
     margin-bottom: 10px;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #bfbab3;
     border-radius: 5px;
     box-sizing: border-box;
-    transition: border-color 0.3s ease, background-color 0.3s ease; /* Добавляем анимацию для цвета фона */
+    transition: border-color 0.3s ease, background-color 0.3s ease;
 }
 
-/* Добавляем анимацию для цвета фона при наведении */
 .contactsForm input:hover,
 .contactsForm input:focus,
 .contactsForm textarea:hover,
 .contactsForm textarea:focus {
-    background-color: #20c997; /* Цвет фона при наведении и фокусе */
-    border-color: #20c997; /* Цвет границы при наведении и фокусе */
-}
-
-
-
-.button {
-    background-color: transparent;
-    border: 2px solid #20c997;
-    color: #20c997;
-    padding: 15px 30px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 24px;
-    margin: 20px 0;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.3s ease, border-color 0.3s;
-}
-
-.button:hover {
     background-color: #20c997;
-    transform: scale(1.05); /* Небольшое увеличение кнопки */
-    border-color: transparent; /* Убрал границу при наведении */
-    color: white;
+    border-color: #20c997;
 }
+

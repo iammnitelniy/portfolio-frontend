@@ -50,3 +50,25 @@
 .title:hover::before {
     transform: scaleX(1);
 }
+
+.button {
+    background-color: transparent;
+    border: 2px solid #20c997;
+    color: #20c997;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    margin: 20px 0;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s ease, border-color 0.3s; /* Улучшил анимацию */
+}
+
+.button:hover {
+    background-color: #20c997;
+    color: #bfbab3;
+    transform: scale(1.05); /* Небольшое увеличение кнопки */
+    border-color: transparent; /* Убрал границу при наведении */
+}

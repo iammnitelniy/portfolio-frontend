@@ -14,8 +14,6 @@
     text-align: center;
 }
 
-
-
 .linksBlock {
     display: flex;
     flex-direction: row;
@@ -42,13 +40,20 @@
     transform: scale(1.1) rotate(360deg); /* Увеличение размера и вращение при наведении */
 }
 
-.logo img {
+.logo a {
     height: 100%;
     width: 100%;
-    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    height: 95%;
+    width: 95%;
 }
 
 .label {
     font-weight: bold;
-    color: #fff;
+    color: #bfbab3;
 }

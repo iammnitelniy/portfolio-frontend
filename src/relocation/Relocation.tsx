@@ -14,7 +14,7 @@ export const Relocation = () => {
 
 
 
-                        <button className={s.button}>Employ me</button>
+                        <button className={styleContainer.button}>Employ me</button>
 
 
             </div>

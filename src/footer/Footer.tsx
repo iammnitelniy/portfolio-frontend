@@ -1,13 +1,19 @@
 import React from "react";
 import s from './Footer.module.css';
 import styleContainer from '../common/styles/Container.module.css';
+import linkedin from '../common/images/linkedin.svg';
+import git from '../common/images/github.png';
+import codewars from '../common/images/codewars.png';
+import telegram from '../common/images/telegram-94.png';
+
+type Logo = { logo: string, link: string}
 
 export const Footer = () => {
-    const mapForLogo = [
-        { logo: '../common/images/icons8-git-50.png' },
-        { logo: 'https://motor.ru/imgs/2021/09/24/07/4914200/c319281d3dac3c5845342a4e3bbdc09dc9279d31.jpg' },
-        { logo: '../common/images/icons8-git-50.png' },
-        { logo: '../common/images/icons8-git-50.png' },
+    const mapForLogo: Logo[] = [
+        { logo: linkedin, link: 'https://www.linkedin.com/in/ilia-barabanov-a0a69b262/'},
+        { logo: git, link: 'https://github.com/iammnitelniy'},
+        { logo: codewars, link: 'https://www.codewars.com/users/Ilia%20Barabanov'},
+        { logo: telegram, link: 't.me/iliabarabanov'},
     ];
 
     return (
@@ -17,7 +23,10 @@ export const Footer = () => {
                 <div className={s.linksBlock}>
                     {mapForLogo.map((logo, index) => (
                         <div key={index} className={s.logo}>
-                            <img src={logo.logo} alt={`Logo ${index}`} />
+                            <a href={logo.link} target="_blank">
+
+                                <img src={logo.logo} alt={`Logo ${index}`} />
+                            </a>
                         </div>
                     ))}
                 </div>
