@@ -21,7 +21,7 @@
     height: 70vh; /* Вернул высоту обратно на 70vh */
     max-width: 100%;
     width: 40vh;
-    background-color: #fff; /* Цвет фона формы */
+    background-color: #343a40; /* Цвет фона формы */
     padding: 20px; /* Увеличен внутренний отступ формы */
     border-radius: 8px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
@@ -79,4 +79,5 @@
     background-color: #20c997;
     transform: scale(1.05); /* Небольшое увеличение кнопки */
     border-color: transparent; /* Убрал границу при наведении */
+    color: white;
 }
