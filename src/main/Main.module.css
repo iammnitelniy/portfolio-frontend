@@ -1,5 +1,5 @@
 .mainBlock {
-    height: 100vh;
+    min-height: 100vh;
     color: #bfbab3;
     background-color: rgb(40, 43, 44);
     padding: 4.5rem 0;
@@ -8,7 +8,6 @@
 }
 
 .container {
-    max-width: 1200px; /* Настройте ширину контейнера по вашим потребностям */
     margin: 0 auto;
     padding: 0 15px;
     display: flex;

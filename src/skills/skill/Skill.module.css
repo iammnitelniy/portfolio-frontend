@@ -7,18 +7,40 @@
     text-align: center;
     border-radius: 8px;
     padding: 20px;
-    width: calc(33.33% - 10px); /* Равное распределение на 3 колонки с отступами */
+    margin: 40px;
+    width: 150px;
+    height: 150px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
     position: relative;
     overflow: hidden;
     cursor: pointer;
+    transform: rotate(45deg);
+}
+
+.content {
+    transform: rotate(-45deg);
+    transition: transform 0.3s ease;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.centeredContent {
+    text-align: center;
+}
+
+.skill:hover .content {
+    transform: rotate(0);
 }
 
 .skill:hover {
-    transform: translateY(-5px); /* Поднимаем элемент при наведении */
+    transform: translateY(-5px);
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
-    background-color: #28e98c; /* Изменение цвета при наведении */
+    background-color: #28e98c;
 }
 
 .icon {
@@ -29,9 +51,9 @@
 }
 
 .skill:hover .icon {
-    transform: scale(1.2); /* Увеличение иконки при наведении */
+    transform: scale(1.2);
 }
 
 .skill:hover h3 {
-    color: #d4d1cc; /* Устанавливаем белый цвет текста при наведении */
+    color: #d4d1cc;
 }

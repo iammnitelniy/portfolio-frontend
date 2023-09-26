@@ -1,5 +1,5 @@
-import s from './Relocation.module.css'
-import styleContainer from '../common/styles/Container.module.css'
+import s from './Relocation.module.scss'
+import styleContainer from '../common/styles/Container.module.scss'
 
 
 
@@ -10,7 +10,7 @@ export const Relocation = () => {
         <div className={s.relocationBlock}>
             <div className={`${styleContainer.container} ${s.relocationContainer}`}>
 
-                <h2 className={styleContainer.title}>Considering relocation</h2>
+                <h2 className={styleContainer.title}>Relocation</h2>
 
 
 

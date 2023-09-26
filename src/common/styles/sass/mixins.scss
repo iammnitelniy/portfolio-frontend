@@ -1,0 +1,19 @@
+@mixin text ($fontFamily, $fontSize, $lineHeight, $fontWeight) {
+  font-family: $fontFamily;
+  font-size: $fontSize;
+  font-height: $lineHeight;
+  font-weight: $fontWeight;
+}
+
+@mixin flex($direction, $justifyContent, $alignItems, $wrap) {
+  border: 1px solid;
+  height: 100%;
+  width: 80%;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justifyContent;
+  align-items: $alignItems;
+  flex-wrap: $wrap
+}

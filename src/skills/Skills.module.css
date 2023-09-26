@@ -1,5 +1,4 @@
 .skillsBlock {
-    min-height: 100vh;
     background-color: #212529;
     display: flex;
     justify-content: center;
@@ -9,6 +8,8 @@
 }
 
 .skillsContainer {
+    max-width: 100%;
+    width: 90%; /* Задайте желаемую ширину контейнера */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -16,49 +17,17 @@
 }
 
 .skills {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+    justify-content: space-around;
+    align-items: end; /* Выравниваем элементы по нижнему краю */
+    margin-bottom: 20px; /* Добавляем отступ снизу */
+    flex-wrap: wrap;
 }
-
-.title {
-    background-image: linear-gradient(90deg, #16d166 0%, #20c997 100%);
-
-    -webkit-background-clip: text;
-    color: transparent;
-    font-size: 28px;
-    margin-bottom: 30px;
-    text-transform: uppercase;
-    display: inline-block;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    cursor: pointer;
-    padding: 15px 30px;
-    border-radius: 8px;
-    position: relative;
-    overflow: hidden;
-}
-
-.title::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.1);
-    top: 0;
-    left: 0;
-    transform: scaleX(0);
-    transform-origin: 0 50%;
-    transition: transform 0.3s ease;
-    pointer-events: none;
-    z-index: -1;
-}
-
-.title:hover {
-    transform: translateY(-5px);
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
-}
-
-.title:hover::before {
-    transform: scaleX(1);
+@media (max-width: 998px) { /* Медиа-запрос для мобильных устройств */
+    .skills {
+        grid-template-columns: repeat(auto-fill, minmax(100%, 1fr)); /* Один столбец на мобильных устройствах */
+        gap: 10px; /* Уменьшаем отступ между элементами */
+    }
 }

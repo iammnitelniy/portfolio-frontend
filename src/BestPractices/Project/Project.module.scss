@@ -1,25 +1,19 @@
 .project {
     width: 100%;
-    max-width: 300px;
+    max-width: 200px;
     background-color: aliceblue;
     border: 1px solid;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin: 10px; /* Добавим немного отступов между проектами */
-    border-radius: 10px; /* Добавим скругленные углы */
-    overflow: hidden; /* Скроем возможное переполнение содержимого */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Добавим небольшую тень */
+    flex-wrap: wrap;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 
     .imgContainer {
         display: flex;
         align-items: center;
-        min-height: 300px;
-        color: #3e8e41;
         min-height: 200px;
-        width: 100%;
-        position: relative; /* Добавим позицию для псевдоэлемента */
+        position: relative;
 
         img {
             width: 100%;
@@ -28,15 +22,15 @@
         }
 
         &::before {
-            content: ''; /* Создадим псевдоэлемент для эффекта при наведении */
+            content: '';
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0, 0, 0, 0.5); /* Черный полупрозрачный фон */
-            opacity: 0; /* Изначально невидимый */
-            transition: opacity 0.3s ease; /* Плавное изменение видимости */
+            background: rgba(0, 0, 0, 0.5);
+            opacity: 0;
+            transition: opacity 0.3s ease;
         }
 
         a {
@@ -53,7 +47,8 @@
         min-height: 200px;
         width: 100%;
         background-color: darkgrey;
-        padding: 10px; /* Добавим внутренние отступы для текста */
+        padding: 10px;
+
         .title {
             background-image: linear-gradient(90deg, #16d166 0%, #20c997 100%);
             -webkit-background-clip: text;
@@ -68,10 +63,11 @@
 
     @media (max-width: 768px) {
         max-width: 100%;
+
+        .imgContainer {
+            max-width: 100%;
+            overflow: hidden;
+
+        }
     }
 }
-
-
-
-
-

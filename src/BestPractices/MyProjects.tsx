@@ -1,5 +1,5 @@
 import s from './MyProjects.module.scss'
-import styleContainer from '../common/styles/Container.module.css'
+import styleContainer from '../common/styles/Container.module.scss'
 import taskManagerImg from '../common/images/task_manager.jpg'
 import socialNetworkImg from '../common/images/social_network.jpg'
 import wishListImg from '../common/images/wishlist.jpg'
@@ -14,6 +14,11 @@ export const MyProjects = () => {
         {id: 0, title: 'Task Manager', image: taskManagerImg, description: 'LOREM HARDCODE Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quaerat dignissimos totam quam nobis, accusamus iste? Officiis quia, ratione cum, ut hic unde at assumenda placeat atque itaque earum velit.'},
         {id: 1, title: 'Social Network', image: socialNetworkImg, description: 'LOREM HARDCODE Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quaerat dignissimos totam quam nobis, accusamus iste? Officiis quia, ratione cum, ut hic unde at assumenda placeat atque itaque earum velit.'},
         {id: 2, title: 'Wishlist', image: wishListImg, description: 'LOREM HARDCODE Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quaerat dignissimos totam quam nobis, accusamus iste? Officiis quia, ratione cum, ut hic unde at assumenda placeat atque itaque earum velit.'},
+        {id: 2, title: 'Wishlist', image: wishListImg, description: 'LOREM HARDCODE Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quaerat dignissimos totam quam nobis, accusamus iste? Officiis quia, ratione cum, ut hic unde at assumenda placeat atque itaque earum velit.'},
+        {id: 2, title: 'Wishlist', image: wishListImg, description: 'LOREM HARDCODE Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quaerat dignissimos totam quam nobis, accusamus iste? Officiis quia, ratione cum, ut hic unde at assumenda placeat atque itaque earum velit.'},
+        {id: 2, title: 'Wishlist', image: wishListImg, description: 'LOREM HARDCODE Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quaerat dignissimos totam quam nobis, accusamus iste? Officiis quia, ratione cum, ut hic unde at assumenda placeat atque itaque earum velit.'},
+        {id: 2, title: 'Wishlist', image: wishListImg, description: 'LOREM HARDCODE Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quaerat dignissimos totam quam nobis, accusamus iste? Officiis quia, ratione cum, ut hic unde at assumenda placeat atque itaque earum velit.'},
+
     ]
 
 
