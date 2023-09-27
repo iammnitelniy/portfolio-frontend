@@ -12,7 +12,7 @@ const Skill: React.FC<SkillProps> = ({ title, description }) => {
                 <h3>{title}</h3>
                 <span className={s.description}>{description}</span>
             </div>
-            <div className={s.icon}></div>
+
         </div>
     );
 };

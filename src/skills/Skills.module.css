@@ -21,13 +21,13 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     justify-content: space-around;
-    align-items: end; /* Выравниваем элементы по нижнему краю */
-    margin-bottom: 20px; /* Добавляем отступ снизу */
+    align-items: end;
+    margin-bottom: 20px;
     flex-wrap: wrap;
 }
-@media (max-width: 998px) { /* Медиа-запрос для мобильных устройств */
+@media (max-width: 998px) {
     .skills {
         grid-template-columns: repeat(auto-fill, minmax(100%, 1fr)); /* Один столбец на мобильных устройствах */
-        gap: 10px; /* Уменьшаем отступ между элементами */
+        gap: 10px;
     }
 }
