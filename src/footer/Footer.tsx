@@ -5,6 +5,7 @@ import linkedin from '../common/images/linkedin.svg';
 import git from '../common/images/github.png';
 import codewars from '../common/images/codewars.png';
 import telegram from '../common/images/telegram-94.png';
+import ReactTypingEffect from "react-typing-effect";
 
 type Logo = { logo: string, link: string}
 
@@ -19,7 +20,7 @@ export const Footer = () => {
     return (
         <div className={s.footerBlock}>
             <div className={`${styleContainer.container} ${s.footerContainer}`}>
-                <h2 className={styleContainer.title}>Ilia Barabanov</h2>
+                <h2 className={styleContainer.title}><ReactTypingEffect text={['Ilia Barabanov']}/></h2>
                 <div className={s.linksBlock}>
                     {mapForLogo.map((logo, index) => (
                         <div key={index} className={s.logo}>

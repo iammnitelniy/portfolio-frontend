@@ -1,6 +1,7 @@
 import React, {FormEvent, useState} from "react";
 import s from './Contacts.module.scss'
 import styleContainer from '../common/styles/Container.module.scss'
+import {Fade} from "react-awesome-reveal";
 
 
 export const Contacts = () => {
@@ -38,40 +39,42 @@ export const Contacts = () => {
     }
 
     return (
-        <div className={s.contactsBlock}>
-            <div className={`${styleContainer.container} ${s.contactsContainer}`}>
-                <h2 className={styleContainer.title}>Contacts</h2>
+        <Fade >
+            <div className={s.contactsBlock}>
+                <div className={`${styleContainer.container} ${s.contactsContainer}`}>
+                    <h2 className={styleContainer.title}>Contacts</h2>
 
-                <div className={s.contactsForm}>
+                    <div className={s.contactsForm}>
 
-                    <form onSubmit={contactsHandler}>
-                        <input
-                            type="text"
-                            name="name"
-                            placeholder="Name"
-                            value={formData.name}
-                            onChange={handleInputNameChange}
-                        />
-                        <input
-                            type="text"
-                            name="email"
-                            placeholder="Email"
-                            value={formData.email}
-                            onChange={handleInputEmailChange}
-                        />
-                        <textarea
-                            name="message"
-                            placeholder="Message"
-                            value={formData.message}
-                            onChange={handleTextareaChange}
-                        />
-                        <button className={styleContainer.button} type="submit">Submit</button>
-                    </form>
+                        <form onSubmit={contactsHandler}>
+                            <input
+                                type="text"
+                                name="name"
+                                placeholder="Name"
+                                value={formData.name}
+                                onChange={handleInputNameChange}
+                            />
+                            <input
+                                type="text"
+                                name="email"
+                                placeholder="Email"
+                                value={formData.email}
+                                onChange={handleInputEmailChange}
+                            />
+                            <textarea
+                                name="message"
+                                placeholder="Message"
+                                value={formData.message}
+                                onChange={handleTextareaChange}
+                            />
+                            <button className={styleContainer.button} type="submit">Submit</button>
+                        </form>
+                    </div>
+
+
                 </div>
-
-
             </div>
-        </div>
+        </Fade>
     );
 };
 

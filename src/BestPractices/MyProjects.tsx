@@ -4,6 +4,7 @@ import taskManagerImg from '../common/images/task_manager.jpg'
 import socialNetworkImg from '../common/images/social_network.jpg'
 import wishListImg from '../common/images/wishlist.jpg'
 import {Project} from "./Project/Project";
+import {Fade} from "react-awesome-reveal";
 
 export type ProjectType = {id: number, title: string, image: string, description: string}
 
@@ -20,23 +21,28 @@ export const MyProjects = () => {
 
 
     return (
-        <div className={s.myProjectsBlock}>
-            <div className={`${styleContainer.container} ${s.projectsContainer}`}>
-
-                <div className={styleContainer.title}>
-                    <h2>My Projects</h2>
-                </div>
+        <Fade>
 
 
-                <div className={s.projects}>
-                    {projectsArray.map((el)=> {
-                        return <div key={el.id}><Project image={el.image} title={el.title}  description={el.description} /></div>
+            <div className={s.myProjectsBlock}>
+                <div className={`${styleContainer.container} ${s.projectsContainer}`}>
 
-                    })}
+                    <div className={styleContainer.title}>
+                        <h2>My Projects</h2>
+                    </div>
 
+
+                    <div className={s.projects}>
+                        {projectsArray.map((el) => {
+                            return <div key={el.id}><Project image={el.image} title={el.title}
+                                                             description={el.description}/></div>
+
+                        })}
+
+                    </div>
                 </div>
             </div>
-        </div>
+        </Fade>
     );
 };
 

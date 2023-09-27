@@ -2,6 +2,8 @@ import React from 'react';
 import s from './Skills.module.css';
 import styleContainer from '../common/styles/Container.module.scss';
 import Skill from './skill/Skill';
+import {Fade, Flip, JackInTheBox, Roll, Zoom} from "react-awesome-reveal";
+import {Particle} from "../common/components/particles/Particles";
 
 type SkillType = {id: number,title: string, description: string}
 
@@ -20,20 +22,25 @@ export const Skills = () => {
     ];
 
     return (
-        <section className={s.skillsBlock}>
-            <div className={`${styleContainer.container} ${s.skillsContainer}`}>
-                <h2 className={styleContainer.title}>Skills</h2>
-                <div className={s.skills}>
-                    {skillsArray.map((el) => (
-                        <Skill
-                            key={el.id}
-                            description={el.description}
-                            title={el.title}
-                        />
-                    ))}
+        <Fade >
+
+            <section className={s.skillsBlock}>
+                <div className={`${styleContainer.container} ${s.skillsContainer}`}>
+                    <h2 className={styleContainer.title}>Skills</h2>
+                    <div className={s.skills}>
+                        {skillsArray.map((el) => (
+                            <Skill
+                                key={el.id}
+                                description={el.description}
+                                title={el.title}
+                            />
+                        ))}
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
+
+        </Fade>
+
     );
 };
 

@@ -4,6 +4,10 @@ $animation-duration: 1s;
 $container-width: 300px;
 $container-background: #212529;
 
+#tsparticles{
+    height:100%
+}
+
 .mainBlock {
     min-height: 100vh;
     color: #bfbab3;
@@ -36,6 +40,7 @@ $container-background: #212529;
     animation: fade-in $animation-duration ease-in-out $animation-delay forwards;
     &:hover {
         transform: scale(1.05);
+
     }
 }
 
@@ -75,6 +80,9 @@ $container-background: #212529;
     height: auto;
     justify-content: center;
     text-align: center;
+    &:hover {
+        filter: blur(10px)
+    }
 }
 
 .imageContainer img {
