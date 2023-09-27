@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio_achievements/static/css/main.42607d0e.css",
-    "main.js": "/portfolio_achievements/static/js/main.d274e667.js",
+    "main.css": "/portfolio_achievements/static/css/main.ecc5d00c.css",
+    "main.js": "/portfolio_achievements/static/js/main.227d10d6.js",
     "static/js/787.b5aac4bf.chunk.js": "/portfolio_achievements/static/js/787.b5aac4bf.chunk.js",
     "static/media/development.jpg": "/portfolio_achievements/static/media/development.1b336ad8668953c0a113.jpg",
     "static/media/circle.png": "/portfolio_achievements/static/media/circle.868e45dda0d4ef912f02.png",
@@ -10,12 +10,12 @@
     "static/media/telegram-94.png": "/portfolio_achievements/static/media/telegram-94.34d6780aeb8d30e5e066.png",
     "index.html": "/portfolio_achievements/index.html",
     "static/media/linkedin.svg": "/portfolio_achievements/static/media/linkedin.e9b8df20d092b20af087c400014ff4c8.svg",
-    "main.42607d0e.css.map": "/portfolio_achievements/static/css/main.42607d0e.css.map",
-    "main.d274e667.js.map": "/portfolio_achievements/static/js/main.d274e667.js.map",
+    "main.ecc5d00c.css.map": "/portfolio_achievements/static/css/main.ecc5d00c.css.map",
+    "main.227d10d6.js.map": "/portfolio_achievements/static/js/main.227d10d6.js.map",
     "787.b5aac4bf.chunk.js.map": "/portfolio_achievements/static/js/787.b5aac4bf.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.42607d0e.css",
-    "static/js/main.d274e667.js"
+    "static/css/main.ecc5d00c.css",
+    "static/js/main.227d10d6.js"
   ]
 }
