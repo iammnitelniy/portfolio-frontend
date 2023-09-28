@@ -8,9 +8,13 @@
 
 .contactsContainer {
     max-width: 100%;
+    flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     justify-content: center;
+     @media(max-width: 738px){
+         flex-direction: row;
+     }
 
 
 

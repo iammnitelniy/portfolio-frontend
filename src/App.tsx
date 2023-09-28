@@ -13,6 +13,11 @@ function App() {
             <header className='header'>
                 <div className='container'>
                     <Header />
+                    {/*<a href={'skillsId'}></a>*/}
+                    {/*<a href={'projectsId'}></a>*/}
+                    {/*<a href={'relocationId'}></a>*/}
+                    {/*<a href={'contactsId'}></a>*/}
+                    {/*<a href={'footerId'}></a>*/}
                 </div>
             </header>
             <main className='main'>
@@ -20,27 +25,27 @@ function App() {
                     <Main />
                 </div>
             </main>
-            <section className='skills'>
+            <section id='skillsId' className='skills'>
                 <div className='container'>
                     <Skills />
                 </div>
             </section>
-            <section className='my-projects'>
+            <section id='projectsId' className='my-projects'>
                 <div className='container'>
                     <MyProjects />
                 </div>
             </section>
-            <section className='relocation'>
+            <section id='relocationId' className='relocation'>
                 <div className='container'>
                     <Relocation />
                 </div>
             </section>
-            <section className='contacts'>
+            <section id='contactsId' className='contacts'>
                 <div className='container'>
                     <Contacts />
                 </div>
             </section>
-            <footer className='footer'>
+            <footer id='footerId' className='footer'>
                 <div className='container'>
                     <Footer />
                 </div>
