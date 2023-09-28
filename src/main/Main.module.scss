@@ -91,7 +91,7 @@ $container-background: #212529;
     height: 650px;
 
     @media (max-width: 1129px) {
-        width: 100%; // При малых экранах изображение будет занимать всю ширину
+        display: none;
     }
 }
 
