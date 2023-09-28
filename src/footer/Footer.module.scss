@@ -24,20 +24,19 @@
 .logo {
     border: 1px solid;
     background-color: #20c997;
-    height: 40px;
-    width: 40px;
+    height: 30px;
+    width: 30px;
     margin: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
     overflow: hidden;
-    transition: transform 0.3s ease, transform 2s linear; /* Добавляем анимацию вращения */
-    cursor: pointer;
+    transition: transform 0.3s ease, transform 2s linear;
 }
 
 .logo:hover {
-    transform: scale(1.1) rotate(360deg); /* Увеличение размера и вращение при наведении */
+    transform: scale(1.1) rotate(360deg);
 }
 
 .logo a {

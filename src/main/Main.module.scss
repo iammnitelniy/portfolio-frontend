@@ -29,7 +29,7 @@ $container-background: #212529;
     flex-wrap: wrap;
 
     @media (max-width: 768px) {
-        width: 100%; // При малых экранах контейнер будет занимать всю ширину
+        width: 100%;
     }
 }
 
@@ -40,6 +40,7 @@ $container-background: #212529;
     animation: fade-in $animation-duration ease-in-out $animation-delay forwards;
     &:hover {
         transform: scale(1.05);
+        filter: blur(1px)
 
     }
 }

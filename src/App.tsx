@@ -13,14 +13,10 @@ function App() {
             <header className='header'>
                 <div className='container'>
                     <Header />
-                    {/*<a href={'skillsId'}></a>*/}
-                    {/*<a href={'projectsId'}></a>*/}
-                    {/*<a href={'relocationId'}></a>*/}
-                    {/*<a href={'contactsId'}></a>*/}
-                    {/*<a href={'footerId'}></a>*/}
+
                 </div>
             </header>
-            <main className='main'>
+            <main id='homeId' className='main'>
                 <div className='container'>
                     <Main />
                 </div>

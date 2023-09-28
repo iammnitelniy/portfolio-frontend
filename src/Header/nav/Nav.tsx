@@ -5,12 +5,13 @@ export const Nav = () => {
     return (
         <div className={styles.nav}>
 
-            <a href="skillsId">Home</a>
-            <a href="projectsId">Skills</a>
-            <a href="relocationId">Projects</a>
-            <a href="contactsId">Relocation</a>
-            <a href="footerId">Contacts</a>
 
+
+            <a href="#homeId">Main</a>
+            <a href='#projectsId'>Projects</a>
+            <a href="#skillsId">Skills</a>
+            <a href="#relocationId">Relocation</a>
+            <a href="#contactsId">Contacts</a>
 
         </div>
     );

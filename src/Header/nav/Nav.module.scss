@@ -1,11 +1,11 @@
 .nav {
 
     display: flex;
-    flex-wrap: wrap; /* Обертывание элементов на мобильных устройствах */
-    justify-content: center; /* Выравнивание по центру горизонтально */
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
     background-color: #212529;
-    padding: 20px; /* Добавьте немного отступа сверху и снизу для улучшенного визуального восприятия */
+    padding: 20px;
 }
 
 .nav a {
@@ -13,7 +13,7 @@
     color: #d4d1cc;
     font-weight: bold;
     font-size: 18px;
-    margin: 10px 20px; /* Уменьшил вертикальные отступы для мобильных устройств */
+    margin: 10px 20px;
     position: relative;
     transition: color 0.3s ease, transform 0.3s ease;
 }
@@ -37,5 +37,6 @@
 }
 
 .nav a:hover {
-    color: #16d166; /* Изменение цвета текста при наведении */
+    color: #16d166;
+    transform: scale(1.15);
 }
