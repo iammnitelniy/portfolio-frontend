@@ -6,9 +6,7 @@ import {MyProjects} from './BestPractices/MyProjects';
 import {Relocation} from './relocation/Relocation';
 import {Contacts} from './contacts/Contacts';
 import {Footer} from './footer/Footer';
-import NavState from "./context/navState";
 import React from "react";
-import MainMenu from "./Header/MainMenu";
 
 function App() {
     return (
