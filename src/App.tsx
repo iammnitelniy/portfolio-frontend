@@ -15,11 +15,11 @@ function App() {
         <div className='App'>
             <header className='header'>
                 <div className='container'>
-                    {/*<Header />*/}
+                    <Header />
 
-                    <NavState>
-                        <MainMenu />
-                    </NavState>
+                    {/*<NavState>*/}
+                    {/*    <MainMenu />*/}
+                    {/*</NavState>*/}
 
                 </div>
             </header>
