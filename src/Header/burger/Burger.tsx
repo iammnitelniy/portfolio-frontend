@@ -41,7 +41,6 @@ const Burger = () => {
                     <a href="#homeId" onClick={toggleDrawer(false)}>About</a>
                     <a href='#projectsId' onClick={ toggleDrawer(false)}>Projects</a>
                     <a href="#skillsId" onClick={toggleDrawer(false)}>Skills</a>
-                    <a href="#relocationId" onClick={toggleDrawer(false)}>Relocation</a>
                     <a href="#contactsId" onClick={toggleDrawer(false)}>Contacts</a>
 
                 </div>
