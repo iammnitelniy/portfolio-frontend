@@ -3,7 +3,9 @@ import styles from './Header.module.css'
 import {Nav} from "./nav/Nav";
 import portrait from "../common/images/circle.png"
 import {AppBar, Hidden, IconButton, Toolbar,} from "@mui/material";
-import MenuIcon from '@mui/icons-material/Menu';
+
+import TemporaryDrawer from "./burger/Burger";
+
 
 
 export const Header = () => {
@@ -18,7 +20,7 @@ export const Header = () => {
                     <img src={portrait} />
 
                     <Hidden mdUp>
-
+                        <TemporaryDrawer />
                     </Hidden>
                     <Hidden mdDown>
                         <Nav />

@@ -8,47 +8,47 @@ import {Contacts} from './contacts/Contacts';
 import {Footer} from './footer/Footer';
 import React from "react";
 
+
 function App() {
     return (
         <div className='App'>
             <header className='header'>
                 <div className='container'>
-                    <Header />
+                    <Header/>
 
-                    {/*<NavState>*/}
-                    {/*    <MainMenu />*/}
-                    {/*</NavState>*/}
 
                 </div>
             </header>
             <main id='homeId' className='main'>
                 <div className='container'>
-                    <Main />
+
+                    <Main/>
+
                 </div>
             </main>
             <section id='skillsId' className='skills'>
                 <div className='container'>
-                    <Skills />
+                    <Skills/>
                 </div>
             </section>
             <section id='projectsId' className='my-projects'>
                 <div className='container'>
-                    <MyProjects />
+                    <MyProjects/>
                 </div>
             </section>
-            <section id='relocationId' className='relocation'>
-                <div className='container'>
-                    <Relocation />
-                </div>
-            </section>
+            {/*<section id='relocationId' className='relocation'>*/}
+            {/*    <div className='container'>*/}
+            {/*        <Relocation/>*/}
+            {/*    </div>*/}
+            {/*</section>*/}
             <section id='contactsId' className='contacts'>
                 <div className='container'>
-                    <Contacts />
+                    <Contacts/>
                 </div>
             </section>
             <footer id='footerId' className='footer'>
                 <div className='container'>
-                    <Footer />
+                    <Footer/>
                 </div>
             </footer>
         </div>
