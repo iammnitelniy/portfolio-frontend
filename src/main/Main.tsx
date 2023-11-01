@@ -16,9 +16,12 @@ export const Main = () => {
                     <div className={s.text}>
                         <h1 className={styleContainer.title}><ReactTypingEffect text={['Ilia Barabanov']}/></h1>
 
+                        <p>
                             <ReactTypingEffect
                                 text={["Front-end Developer"]}
                             />
+                        </p>
+
 
 
                     </div>
