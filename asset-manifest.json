@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/portfolio_achievements/static/css/main.4afa9d79.css",
-    "main.js": "/portfolio_achievements/static/js/main.90eb555c.js",
-    "static/js/651.366f0cf8.chunk.js": "/portfolio_achievements/static/js/651.366f0cf8.chunk.js",
-    "static/media/development.jpg": "/portfolio_achievements/static/media/development.1b336ad8668953c0a113.jpg",
-    "static/media/circle.png": "/portfolio_achievements/static/media/circle.868e45dda0d4ef912f02.png",
-    "static/media/task_manager.jpg": "/portfolio_achievements/static/media/task_manager.225e15dd57c14606fa1f.jpg",
-    "static/media/wishlist.jpg": "/portfolio_achievements/static/media/wishlist.0ea2aeea9a5e627e1211.jpg",
-    "static/media/telegram-94.png": "/portfolio_achievements/static/media/telegram-94.34d6780aeb8d30e5e066.png",
-    "index.html": "/portfolio_achievements/index.html",
-    "static/media/linkedin.svg": "/portfolio_achievements/static/media/linkedin.e9b8df20d092b20af087c400014ff4c8.svg",
-    "main.4afa9d79.css.map": "/portfolio_achievements/static/css/main.4afa9d79.css.map",
-    "main.90eb555c.js.map": "/portfolio_achievements/static/js/main.90eb555c.js.map",
-    "651.366f0cf8.chunk.js.map": "/portfolio_achievements/static/js/651.366f0cf8.chunk.js.map"
+    "main.css": "/portfolio-frontend/static/css/main.4afa9d79.css",
+    "main.js": "/portfolio-frontend/static/js/main.df39e044.js",
+    "static/js/651.366f0cf8.chunk.js": "/portfolio-frontend/static/js/651.366f0cf8.chunk.js",
+    "static/media/development.jpg": "/portfolio-frontend/static/media/development.1b336ad8668953c0a113.jpg",
+    "static/media/circle.png": "/portfolio-frontend/static/media/circle.868e45dda0d4ef912f02.png",
+    "static/media/task_manager.jpg": "/portfolio-frontend/static/media/task_manager.225e15dd57c14606fa1f.jpg",
+    "static/media/wishlist.jpg": "/portfolio-frontend/static/media/wishlist.0ea2aeea9a5e627e1211.jpg",
+    "static/media/telegram-94.png": "/portfolio-frontend/static/media/telegram-94.34d6780aeb8d30e5e066.png",
+    "index.html": "/portfolio-frontend/index.html",
+    "static/media/linkedin.svg": "/portfolio-frontend/static/media/linkedin.e9b8df20d092b20af087c400014ff4c8.svg",
+    "main.4afa9d79.css.map": "/portfolio-frontend/static/css/main.4afa9d79.css.map",
+    "main.df39e044.js.map": "/portfolio-frontend/static/js/main.df39e044.js.map",
+    "651.366f0cf8.chunk.js.map": "/portfolio-frontend/static/js/651.366f0cf8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4afa9d79.css",
-    "static/js/main.90eb555c.js"
+    "static/js/main.df39e044.js"
   ]
 }
